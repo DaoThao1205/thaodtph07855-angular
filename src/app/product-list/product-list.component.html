@@ -1,31 +1,32 @@
+<div *ngIf="showBackToProductList">
+  <button class="btn btn-primary" (click)="backToProductList()">Back To Product List</button>
+</div>
 <div class="row">
   <!-- <app-product ngClass="col-lg-4 col-md-6 mb-4"></app-product>
     <app-product ngClass="col-lg-4 col-md-6 mb-4"></app-product>
     <app-product ngClass="col-lg-4 col-md-6 mb-4"></app-product> -->
-<div *ngIf="show">
+  
+
   <div ngClass="col-lg-4 col-md-6 mb-4"  *ngFor="let product of products">
-    <div class="card h-100">
+    <div class="card h-100"  *ngIf="showProductDetail">
       <a href="#"><img class="card-img-top" [src]="product.img" alt=""></a>
       <div class="card-body">
         <h4 class="card-title">
           <a href="#">{{product.name}}</a>
         </h4>
         <h5>${{product.price}}</h5>
-        <div *ngIf="selected">
-        <app-product [data]="selected"></app-product>
-        </div>
         <!-- <p class="card-text">{{product.desc}}</p>
         <p class="card-text">{{product.status ? 'In stock': 'Out stock'}}</p> -->
       </div>
       <div class="card-footer">
           <button class="btn btn-primary" (click)="removeItem(product.id)">Delete</button>
-          <button class="btn btn-primary" (click)="showDetail(product)">Click me!</button>
+          <button class="btn btn-primary" (click)="showDetail(product)">Show Detail</button>
+          <button class="btn btn-primary" (click)="Edit(product)">Edit</button>
           <!-- <input type="text" name="" id="" (keyup)="changeName($event)" class="form-control mt-3"> -->
           <input type="text" name="" id="" [(ngModel)]="product.name" class="form-control mt-3">
       </div>
     </div>
   </div>
-</div>
 </div>
 
 <div *ngIf="selected">

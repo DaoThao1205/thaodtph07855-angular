@@ -10,7 +10,8 @@ import { Product } from '../Product';
 export class ProductListComponent implements OnInit {
   selected: Product;
   products: Product[];
-  show:true;
+  showProductDetail: boolean= true;
+  showBackToProductList: boolean= false;
   constructor(
     private productService: ProductService
   ) { 
@@ -40,8 +41,18 @@ export class ProductListComponent implements OnInit {
   // removeItem(id){
   //   this.products = this.products.filter(product => product.id != id);
   // }
+  backToProductList(){
+    this.showBackToProductList=false;
+    this.showProductDetail=true;
+    this.selected=new Product();
+  }
   showDetail(product){
     console.log(product);
+    this.showBackToProductList=true;
+    this.showProductDetail=false;
     this.selected = product;
+  }
+  Edit(product){
+    
   }
 }

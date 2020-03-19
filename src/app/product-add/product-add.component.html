@@ -6,6 +6,18 @@
     <input type="text" name="price" class="form-control"placeholder="Price" [(ngModel)]="product.price">
     <input type="text" name="desc" class="form-control"placeholder="Desc" [(ngModel)]="product.desc">
     <input type="text" name="img" class="form-control"placeholder="Img" [(ngModel)]="product.img">
+    <input type="text"      
+                  class="form-control"      
+                  value="{{product.status ? 'In stock': 'Out stock'}}"
+                  readonly
+              />
+
+              <input type="checkbox" 
+                name="status"
+                class="form-control"
+                [(ngModel)]="product.status"
+                checked
+              />
   </div>
   <button type="submit" class="btn btn-primary" (click)="addProduct()">Submit</button>
 </form>
