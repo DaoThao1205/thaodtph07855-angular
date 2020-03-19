@@ -7,7 +7,7 @@ export const data : Product[] = [
       price: 24.99,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!',
       status: false,
-      img: 'https://smartfruits.vn/wp-content/uploads/2019/03/cherry-duoc-trong-va-thu-hoach-tren-dat-my.jpg'
+      img: 'https://vinfruits.com/wp-content/uploads/2017/04/cherry-wallpaper11.jpg'
     },
     {
       id: 2,
@@ -32,5 +32,21 @@ export const data : Product[] = [
       desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!',
       status: false,
       img: 'https://kenhvaobep.com/wp-content/uploads/2018/12/2168a1f3e24c.jpg'
-    }
+    },
+    {
+      id: 5,
+      name: "Lựu",
+      price: 24.99,
+      desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!',
+      status: false,
+      img: 'https://tfv.goodblogscdn.com/sites/www.theflamingvegan.com/post_images/originals/4888.jpg?v=1473373287'
+    },
+     {
+      id: 6,
+      name: "Nho Đen",
+      price: 24.99,
+      desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!',
+      status: false,
+      img: 'https://vnn-imgs-f.vgcloud.vn/2018/09/11/14/nho-mot-loai-qua-vua-ngon-lai-vua-la-thuoc-quy-phong-ngua-ti-thu-benh-2.jpg'
+    },
 ]

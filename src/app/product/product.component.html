@@ -11,4 +11,8 @@
     <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
     </div>
 </div> -->
-{{product.name}}
+{{product.name}}<br>
+${{product.price}}<br>
+{{product.desc}}<br>
+{{product.status ? 'In stock': 'Out stock'}}
+<img src="{{product.img}}">
