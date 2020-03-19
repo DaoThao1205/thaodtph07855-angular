@@ -11,19 +11,13 @@
     <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
     </div>
 </div> -->
-<!-- {{product.name}}<br>
-${{product.price}}<br>
-{{product.desc}}<br>
-{{product.status ? 'In stock': 'Out stock'}}
-<img src="{{product.img}}"> -->
 
-<h4 class="card-title">
-  <a href="#"><img class="card-img-top" [src]="product.img" alt=""></a>
+      <div class="card-body">
+        <h4 class="card-title">
           <a href="#">{{product.name}}</a>
         </h4>
         <h5>${{product.price}}</h5>
-        <div *ngIf="selected">
-        <app-product [data]="selected"></app-product>
-        </div>
         <p class="card-text">{{product.desc}}</p>
         <p class="card-text">{{product.status ? 'In stock': 'Out stock'}}</p>
+      </div>
+      <a href="#"><img class="card-img-top" [src]="product.img" alt=""></a>
