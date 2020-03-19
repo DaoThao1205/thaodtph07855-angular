@@ -1,0 +1,9 @@
+<form class="w-50 mx-auto mt-3">
+
+  <div class="form-group">
+    <label for="">  {{address}}</label>
+    <input type="text" name="name" class="form-control"placeholder="Product Name" [(ngModel)]="product.name">
+    <input type="text" name="price" class="form-control"placeholder="Price" [(ngModel)]="product.price">
+  </div>
+  <button type="submit" class="btn btn-primary" (click)="addProduct()">Submit</button>
+</form>

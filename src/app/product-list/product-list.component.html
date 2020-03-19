@@ -1,12 +1,9 @@
 <div class="row">
-     <!-- <app-product ngClass="col-lg-4 col-md-6 mb-4"></app-product>
-     <app-product ngClass="col-lg-4  col-md-6 mb-4"></app-product>
-     <app-product ngClass="col-lg-4 col-md-6 mb-4"></app-product>
-     <app-product ngClass="col-lg-4 col-md-6 mb-4"></app-product>
-     <app-product ngClass="col-lg-4 col-md-6 mb-4"></app-product>
-     <app-product ngClass="col-lg-4 col-md-6 mb-4"></app-product> -->
-     <div class="col-lg-4 col-md-6 mb-4">
-     <div class="card h-100">
+  <!-- <app-product ngClass="col-lg-4 col-md-6 mb-4"></app-product>
+    <app-product ngClass="col-lg-4 col-md-6 mb-4"></app-product>
+    <app-product ngClass="col-lg-4 col-md-6 mb-4"></app-product> -->
+  <div ngClass="col-lg-4 col-md-6 mb-4" *ngFor="let product of products">
+    <div class="card h-100">
       <a href="#"><img class="card-img-top" [src]="product.img" alt=""></a>
       <div class="card-body">
         <h4 class="card-title">
@@ -14,12 +11,19 @@
         </h4>
         <h5>${{product.price}}</h5>
         <p class="card-text">{{product.desc}}</p>
-        <p class="card-text">{{product.status ?"Còn Sản Phẩm":"Cháy Hàng"}}</p>
+        <p class="card-text">{{product.status ? 'In stock': 'Out stock'}}</p>
       </div>
       <div class="card-footer">
-        <button (click)="changeStatus()" class="btn btn-primary">Click Me</button>
-        <input type="text" [(ngModel)]="product.name">
+          <button class="btn btn-primary" (click)="removeItem(product.id)">Delete</button>
+          <button class="btn btn-primary" (click)="showDetail(product)">Click me!</button>
+          <!-- <input type="text" name="" id="" (keyup)="changeName($event)" class="form-control mt-3"> -->
+          <input type="text" name="" id="" [(ngModel)]="product.name" class="form-control mt-3">
       </div>
     </div>
-   </div>
   </div>
+
+</div>
+
+<div *ngIf="selected">
+  <app-product [data]="selected"></app-product>
+</div>
