@@ -49,4 +49,36 @@ export const data : Product[] = [
       status: false,
       img: 'https://vnn-imgs-f.vgcloud.vn/2018/09/11/14/nho-mot-loai-qua-vua-ngon-lai-vua-la-thuoc-quy-phong-ngua-ti-thu-benh-2.jpg'
     },
+    {
+      id: 7,
+      name: "Chôm Chôm",
+      price: 24.99,
+      desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!',
+      status: false,
+      img: 'https://lh3.googleusercontent.com/proxy/7mGFhh5XU00tqr5GM5OXrmJN7QGrYsLyb-bW_oNVOFfQtypkldGwNz0fXbpOOP5QBSdypr4fMxJM09_51fJDgG_cgSPW8AzxiLXOdCbafoWfvSiVuWpNAyWp3tWYHyHT-64dq6WnU1DLv86oTPIcoYixZ0Yxg8T87yjOgi3u'
+    },
+    {
+      id: 8,
+      name: "Măng Cụt",
+      price: 24.99,
+      desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!',
+      status: false,
+      img: 'https://image.thanhnien.vn/980/uploaded/dieutrang.qc/2017_11_09/kg2/1_utxn.jpg'
+    },
+    {
+      id: 9,
+      name: "Mít",
+      price: 24.99,
+      desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!',
+      status: false,
+      img: 'https://thecolumbiapartnership.org/wp-content/uploads/2019/10/giai-ma-giac-mo-thay-qua-mit-750x480.png'
+    },
+    {
+      id: 10,
+      name: "Dưa Hấu",
+      price: 24.99,
+      desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!',
+      status: false,
+      img: 'https://lh3.googleusercontent.com/proxy/5IWFXvYUShMxd0CLqeC2rmE1d4TsI7BByIyF6U_3sVMt40_f36BmXUqXMQOa9LuPqxgLKplrrSUEw833cXVXNoWDsAf_2cBFdtyp9YX49xc3fW1ZM8XwGN-AoJdVpKQt'
+    },
 ]
