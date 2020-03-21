@@ -11,14 +11,14 @@ import { CategoryComponent } from './category/category.component';
 import { FormsModule} from '@angular/forms';
 import { ProductService } from './product.service';
 import { ProductAddComponent } from './product-add/product-add.component';
-import { HomeComponent } from './home/home.component';
-import { NotFoundComponent } from './not-found/not-found.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { ProductManagerComponent } from './product-manager/product-manager.component';
+import { HomeComponent } from './home/home.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, AppRoutingModule ],
-  declarations: [ AppComponent, HelloComponent, ProductComponent, ProductListComponent, SlideComponent, CategoryComponent, ProductAddComponent, HomeComponent, NotFoundComponent, ProductDetailComponent, ProductManagerComponent],
+  declarations: [ AppComponent, HelloComponent, ProductComponent, ProductListComponent, SlideComponent, CategoryComponent, ProductAddComponent, ProductDetailComponent, ProductManagerComponent, HomeComponent, NotFoundComponent],
   bootstrap:    [ AppComponent ],
   providers: [ProductService]
 })

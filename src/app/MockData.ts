@@ -55,7 +55,7 @@ export const data : Product[] = [
       price: 24.99,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!',
       status: false,
-      img: 'https://lh3.googleusercontent.com/proxy/7mGFhh5XU00tqr5GM5OXrmJN7QGrYsLyb-bW_oNVOFfQtypkldGwNz0fXbpOOP5QBSdypr4fMxJM09_51fJDgG_cgSPW8AzxiLXOdCbafoWfvSiVuWpNAyWp3tWYHyHT-64dq6WnU1DLv86oTPIcoYixZ0Yxg8T87yjOgi3u'
+      img: 'https://3.bp.blogspot.com/-TQiToKSLIQk/VhU-FXR3SRI/AAAAAAAACsc/zKzA4lnW5fA/s1600/1438761299-babauanchomchom2.jpg'
     },
     {
       id: 8,
@@ -79,6 +79,6 @@ export const data : Product[] = [
       price: 24.99,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!',
       status: false,
-      img: 'https://lh3.googleusercontent.com/proxy/5IWFXvYUShMxd0CLqeC2rmE1d4TsI7BByIyF6U_3sVMt40_f36BmXUqXMQOa9LuPqxgLKplrrSUEw833cXVXNoWDsAf_2cBFdtyp9YX49xc3fW1ZM8XwGN-AoJdVpKQt'
+      img: 'https://thuocthang.com.vn/vnt_upload/File/Image/pasteque_reuters.jpg'
     },
 ]
