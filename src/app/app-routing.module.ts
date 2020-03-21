@@ -5,7 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { ProductListComponent } from './product-list/product-list.component';
-import { ProductManagerComponent } from './slide/product-manager/product-manager.component';
+import { ProductManagerComponent } from './product-manager/product-manager.component';
 
 
 const routes: Routes = [
