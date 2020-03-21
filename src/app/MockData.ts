@@ -5,7 +5,7 @@ export const data : Product[] = [
       id: 1,
       name: "Cherry",
       price: 24.99,
-      desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!',
+      desc: 'Quả cherry da láng bóng,thịt chắc,màu vàng đỏ tươi,khi chín ngả màu tím tía rất đẹp.Thịt cherry mọng,óng ả như ngọc bích ,ăn giòn ngọt, đậm đà,hương thơm dịu nhẹ thư thái,hạt róc không dính.',
       status: false,
       img: 'https://vinfruits.com/wp-content/uploads/2017/04/cherry-wallpaper11.jpg'
     },

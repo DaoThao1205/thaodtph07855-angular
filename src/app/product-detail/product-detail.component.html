@@ -1,0 +1,12 @@
+<h1>Product-Detail</h1>
+ <div *ngIf="product">
+  <div class="card-body">
+        <h4 class="card-title">
+          <a href="#">{{product.name}}</a>
+        </h4>
+        <h5>${{product.price}}</h5>
+        <p class="card-text">{{product.desc}}</p>
+        <p class="card-text">{{product.status ? 'In stock': 'Out stock'}}</p>
+      </div>
+      <a href="#"><img class="card-img-top" [src]="product.img" alt=""></a>
+ </div>

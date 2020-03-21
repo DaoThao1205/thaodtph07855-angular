@@ -9,8 +9,11 @@ export class ProductService {
   getProducts(){
     return this.products;
   }
+  getProduct(id){
+    return this.products.find(product => product.id == id);
+  }
   removeProduct(id){
-    return this.products.filter(product => product.id != id);
+    return this.products.filter(product => product.id !== id);
   }
   addProduct(product){
     const newProduct = { id: 5, ...product};

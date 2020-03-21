@@ -13,20 +13,22 @@
           <a href="#">{{product.name}}</a>
         </h4>
         <h5>${{product.price}}</h5>
-        <p class="card-text">{{product.desc}}</p>
+        <!-- <p class="card-text">{{product.desc}}</p> -->
         <p class="card-text">{{product.status ? 'In stock': 'Out stock'}}</p>
       </div>
       <div class="card-footer">
-          <button class="btn btn-primary" (click)="removeItem(product.id)">Delete</button>
+          <!-- <button class="btn btn-primary" (click)="removeItem(product.id)">Delete</button>
           <button class="btn btn-primary" (click)="showDetail(product)">Detail</button>
-          <button class="btn btn-primary" (click)="Edit(product)">Edit</button>
+          <button class="btn btn-primary" (click)="Edit(product)">Edit</button> -->
+          <button class="btn btn-primary" routerLink="/product/{{product.id}}">Chi tiết</button>
           <!-- <input type="text" name="" id="" (keyup)="changeName($event)" class="form-control mt-3"> -->
-          <input type="text" name="" id="" [(ngModel)]="product.name" class="form-control mt-3">
+
+          <!-- <input type="text" name="" id="" [(ngModel)]="product.name" class="form-control mt-3"> -->
       </div>
     </div>
   </div>
 </div>
 
-<div *ngIf="selected">
+<!-- <div *ngIf="selected">
   <app-product [data]="selected"></app-product>
-</div>
+</div> -->
