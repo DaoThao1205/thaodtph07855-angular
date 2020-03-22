@@ -15,11 +15,27 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { ProductManagerComponent } from './product-manager/product-manager.component';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { NewPostComponent } from './new-post/new-post.component';
+import { NewPostService } from './new-post.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, AppRoutingModule ],
-  declarations: [ AppComponent, HelloComponent, ProductComponent, ProductListComponent, SlideComponent, CategoryComponent, ProductAddComponent, ProductDetailComponent, ProductManagerComponent, HomeComponent, NotFoundComponent],
-  bootstrap:    [ AppComponent ],
-  providers: [ProductService]
+  declarations: [
+    AppComponent,
+    ProductListComponent,
+    SlideComponent,
+    ProductComponent,
+    CategoryComponent,
+    ProductAddComponent,
+    ProductManagerComponent, NotFoundComponent, ProductDetailComponent, NewPostComponent,HomeComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
+  ],
+  providers: [ProductService, NewPostService],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

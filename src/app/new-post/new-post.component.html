@@ -1,0 +1,24 @@
+<div class="row">
+  <!-- <app-product ngClass="col-lg-4 col-md-6 mb-4"></app-product>
+    <app-product ngClass="col-lg-4 col-md-6 mb-4"></app-product>
+    <app-product ngClass="col-lg-4 col-md-6 mb-4"></app-product> -->
+  <div ngClass="col-lg-4 col-md-6 mb-4" *ngFor="let newPost of newPosts">
+    <div class="card h-100">
+      <div class="card-body">
+        <h4 class="card-title">
+          <a>{{newPost.title}}</a>
+        </h4>
+        <p class="card-text">{{newPost.body}}</p>
+      </div>
+      <div class="card-footer">
+          <button class="btn btn-primary">Detail</button>
+          <!-- <input type="text" name="" id="" (keyup)="changeName($event)" class="form-control mt-3"> -->
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div *ngIf="selected">
+  <app-product [data]="selected"></app-product>
+</div>
