@@ -10,6 +10,7 @@ import { Product } from '../Product';
 export class ProductListComponent implements OnInit {
   selected: Product;
   products: Product[];
+
   constructor(
     private productService: ProductService
   ) { 
@@ -21,13 +22,15 @@ export class ProductListComponent implements OnInit {
   }
  
   getProducts(){
-    this.products = this.productService.getProducts();
+   this.productService.getProducts().subscribe(data => {
+     console.log(data);
+     this.products = data;
+    });
   }
   removeItem(id){
-    // this.productService.removeProduct(id);
-    this.products = this.products.filter(product => product.id != id);
+    this.products = this.productService.removeProduct(id);
+    // this.products = this.products.filter(product => product.id != id);
   }
-
 
 
   // changeStatus(){
@@ -40,11 +43,11 @@ export class ProductListComponent implements OnInit {
   //   this.products = this.products.filter(product => product.id != id);
   // }
 
-  showDetail(product){
-    console.log(product);
-    this.selected = product;
-  }
-  Edit(product){
+  // showDetail(product){
+  //   console.log(product);
+  //   this.selected = product;
+  // }
+  // Edit(product){
     
-  }
+  // }
 }
