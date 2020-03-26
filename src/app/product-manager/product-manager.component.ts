@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../product.service';
 
 import { Product } from '../Product';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-product-manager',
   templateUrl: './product-manager.component.html',
@@ -12,7 +13,8 @@ export class ProductManagerComponent implements OnInit {
 
 
   constructor(
-    private productService: ProductService
+    private productService: ProductService,
+    private router: Router
   ) {
     console.log('constructor')
    }
@@ -21,10 +23,19 @@ export class ProductManagerComponent implements OnInit {
     this.getProducts();
   }
   getProducts(){
-    this.products = this.productService.getProducts();
+   this.productService.getProducts().subscribe(data => {
+     console.log(data);
+     this.products = data;
+    });
   }
-   removeItem(id){
-    // this.productService.removeProduct(id);
-    this.products = this.products.filter(product => product.id != id);
+  // updateProduct(){
+  //       this.productService.updateProduct(this.product).subscribe(data => {
+  //       this.router.navigateByUrl("/product")
+  //     });
+  // }
+  removeProduct(){
+      this.productService.removeProduct(this.product).subscribe(data => {
+        this.router.navigateByUrl("/product")
+      });
   }
 }
