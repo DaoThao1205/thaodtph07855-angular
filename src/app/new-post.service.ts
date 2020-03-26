@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
 
 @Injectable()
 export class NewPostService {
-  api = 'https://jsonplaceholder.typicode.com/posts';
+  api = 'https://5e7bf752a917d70016682c8c.mockapi.io/api/news';
   products = data;
   constructor(
     private http: HttpClient
