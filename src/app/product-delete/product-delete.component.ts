@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ProductService } from '../product.service';
 import { Product } from '../Product';
+import { data } from '../MockData';
 
 @Component({
   selector: 'app-product-delete',
@@ -26,8 +27,8 @@ export class ProductDeleteComponent implements OnInit {
     })
   }
   removeProduct(){
-      this.productService.removeProduct(this.product).subscribe(data => {
-        this.router.navigateByUrl("/product")
-      });
+     this.product.removeProduct(this.product).subscribe(data => {
+       
+     })
   }
 }

@@ -21,9 +21,8 @@ export class ProductService {
     return this.http.get<Product>(`${this.api}/${id}`);
     // return this.products.find(product => product.id == id);
   }
-  removeProduct(product){
-   
-    return this.http.delete<Product>(`${this.api}/${product.id}`, product);
+  removeProduct(id):Observable<Product>{
+    return this.http.delete<Product>(`${this.api}/${id}`);
   }
   addProduct(product){
     return this.http.post<Product>(`${this.api}`, product);
