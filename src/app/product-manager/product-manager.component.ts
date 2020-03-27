@@ -33,8 +33,10 @@ export class ProductManagerComponent implements OnInit {
   //       this.router.navigateByUrl("/product")
   //     });
   // }
-  // removeProduct(){
-  //     this.productService.removeProduct(this.product).subscribe(data => {
-  //       this.router.navigateByUrl("/product")
-  //     });
+  removeItem(id){
+    this.productService.removeProduct(id).subscribe(response =>{
+    this.products = this.products.filter(product => product.id != response.id);
+    }) 
+    // this.products = this.products.filter(product => product.id != id);
   }
+}

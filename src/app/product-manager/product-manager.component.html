@@ -56,9 +56,9 @@
         <td>{{product.status ? 'In stock': 'Out stock'}}</td>
          <td><img [src]="product.img" width="200px"></td>
        
-        <td><button class="btn btn-primary" routerLink="/product/{{product.id}}">Detail</button></td>
+        <!-- <td><button class="btn btn-primary" routerLink="/product/{{product.id}}">Detail</button></td> -->
         <td><button class="btn btn-primary" routerLink="/product/edit/{{product.id}}" >Edit</button></td>
-         <td><button class="btn btn-primary" routerLink="/product/delete/{{product.id}}">Delete</button></td>
+         <td><button class="btn btn-primary" (click)="removeItem(product.id)">Delete</button></td>
       </tr>
       
     </tbody>

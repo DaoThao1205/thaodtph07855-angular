@@ -19,7 +19,6 @@ import { NewPostComponent } from './new-post/new-post.component';
 import { NewPostService } from './new-post.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductEditComponent } from './product-edit/product-edit.component';
-import { ProductDeleteComponent } from './product-delete/product-delete.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +28,7 @@ import { ProductDeleteComponent } from './product-delete/product-delete.componen
     ProductComponent,
     CategoryComponent,
     ProductAddComponent,
-    ProductManagerComponent, NotFoundComponent, ProductDetailComponent, NewPostComponent,HomeComponent, ProductEditComponent, ProductDeleteComponent,
+    ProductManagerComponent, NotFoundComponent, ProductDetailComponent, NewPostComponent,HomeComponent, ProductEditComponent
   ],
   imports: [
     BrowserModule,
